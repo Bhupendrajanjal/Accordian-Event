@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+span{
+    color: red;
+    
+}
+.accodBody {
+    /* padding: 20px; */
+    display: none;
+   background-color:pink;
+   color: black;
+ margin-bottom: 0;
+   
+}
+.accodMain{
+    width: 600px;
+    margin: 50px auto;
+    background-color:black;
+    color: white;
+    border: 4px dashed red ;
+}
+.accodHeadding{
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.accodHeadding + .accodBody{
+    display: none;
+}
+
+.accodHeadding.active + .accodBody{
+    display: block;
+}
+.accodMain:hover{
+    background-color: blue;
+    transition: all .5s ease-in-out;
+}
